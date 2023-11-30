@@ -1,0 +1,37 @@
+{% extends 'base/base.html' %}
+<!-- Se cargan los estáticos-->
+{% load static %}
+<!-- Inicio bloque título-->
+{%block tittle %} Crear Empleados {% endblock tittle %}
+<!-- Fin bloque título-->
+{% block body %}
+<!-- inicio nav -->
+{% include 'base/menu.html' %}
+<div class="Container">
+  <div class="ContainerEmpleado">
+    <h1 class="ContainerEmpleadoTitulo m-3">Crear Departamento</h1>
+    <form action="" method="POST" enctype="multipart/form-data">
+      {% csrf_token %}
+      <div class="ContainerEmpleadoFieldsField m-3">
+        <!-- Nombre del departamento-->
+        Nombre del departamento: {{form.nombreDepartamento}}
+      </div>
+      <div class="ContainerEmpleadoFieldsField m-3">
+        <!-- Nombre del departamento-->
+        Sigla Departamento: {{form.siglaDepartamento}}
+      </div>
+      <div class="ContainerEmpleadoFieldsField m-3">
+        <!-- Nombre del departamento-->
+        Activo: {{form.activoDepartamento}}
+      </div>
+      <button type="submit" class="btn btn-primary m-3 btn-lg">Guardar</button>
+    </form>
+    <a
+      class="btn btn-outline-secondary"
+      href="{% url 'inicio_app:InicioTemplateView' %}"
+    >
+      Volver
+    </a>
+  </div>
+</div>
+{% include 'base/footer.html' %} {% endblock body %}

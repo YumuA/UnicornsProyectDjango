@@ -1,0 +1,17 @@
+{% extends 'base/base.html' %}
+<!-- Se cargan los estáticos-->
+{% load static %}
+<!-- Inicio bloque título-->
+{%block tittle %} Inicio{% endblock tittle %}
+<!-- Fin bloque título-->
+{% block body %}
+<!-- inicio nav -->
+{% include 'base/menu.html' %}
+<!-- Fin nav -->
+<div class="Container">
+    <h1>Algo</h1>
+</div>
+<!-- inicio footer -->
+{% include 'base/footer.html' %}
+<!-- Fin footer -->
+{% endblock body %}

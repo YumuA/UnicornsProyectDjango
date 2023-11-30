@@ -1,0 +1,42 @@
+/* line 1, static/sass/menu.sass */
+.navbar {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 2; }
+
+/* line 6, static/sass/menu.sass */
+.navLogo {
+  width: 50px; }
+
+/* line 8, static/sass/menu.sass */
+.nav-link {
+  color: black !important; }
+  /* line 10, static/sass/menu.sass */
+  .nav-link:hover {
+    font-size: 1.2rem; }
+
+/* line 1, static/sass/footer.sass */
+.footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  z-index: 1; }
+
+/* line 6, static/sass/footer.sass */
+.footerLogo {
+  width: 25px;
+  height: 25px; }
+
+/* line 9, static/sass/footer.sass */
+.text {
+  color: black !important; }
+
+/* line 3, static/sass/base.sass */
+.Container {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  margin: 90px 0;
+  justify-content: center;
+  align-items: center; }
